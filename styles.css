@@ -1,0 +1,340 @@
+/* Global */
+body {
+margin: 0;
+font-family: "Segoe UI", Arial, sans-serif;
+background: #f7f7f7;
+color: #333;
+line-height: 1.6;
+}
+
+
+/* Header */
+header {
+position: relative;
+background: #ffffff;
+padding: 20px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #e5e5e5;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+
+header h1 {
+margin: 0;
+font-size: 28px;
+font-weight: 600;
+color: #2a3d66;
+}
+
+
+/* Navigation Horizontal */
+nav {
+display: flex;
+gap: 20px;
+flex-direction: row;
+}
+nav a {
+text-decoration: none;
+color: #2a3d66;
+font-weight: 500;
+transition: 0.3s ease;
+}
+nav a:hover {
+color: #1a2644;
+text-decoration: underline;
+}
+
+
+/* Mobile Menu */
+.menu-btn {
+display: none;
+font-size: 30px;
+cursor: pointer;
+color: #2a3d66;
+margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+header {
+justify-content: flex-end;
+}
+nav {
+flex-direction: column;
+display: none;
+position: absolute;
+top: 70px;
+right: 10px;
+width: 200px;
+padding: 20px;
+background: #ffffff;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+nav.open {
+display: flex;
+}
+.menu-btn {
+display: block;
+}
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 90vh; /* hero takes 60% of viewport height */
+    overflow: hidden;
+ }
+
+   .hero img,
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* Section below hero */
+.about-section {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px; /* adjust spacing */
+    background-color: #f9f9f9;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    position: relative;
+}
+
+/* Optional underline */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: gold;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Paragraph */
+.about-text {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Mobile Menu */
+/* Services Grid */
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.service-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 350px; /* ensures perfect layout */
+  text-align: center;
+}
+
+
+.service-card h3 {
+margin-top: 0;
+color: #2a3d66;
+font-size: 22px;
+}
+
+@media (max-width: 768px) {
+
+  .hero img {
+    height: auto; /* prevents vertical squeeze */
+  }
+
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+}
+
+
+/* Smaller hero for other pages */
+.small-hero {
+  height: 40vh;   /* YOU CAN ADJUST: try 35vh or 50vh */
+}
+/* Smaller hero for non-home pages */
+.small-hero {
+    width: 100%;
+  height: 40vh;
+}
+
+/* Even smaller on mobile */
+@media (max-width: 768px) {
+  .small-hero {
+    height: 30vh;
+  }
+}
+
+
+
+
+/* ========================= */
+/* Project Folder Structure */
+/* ========================= */
+
+
+
+
+/* Mobile Menu */
+/* Services Grid */
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+}
+
+
+.service-card {
+background: white;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+text-align: center;
+}
+
+
+.service-card h3 {
+margin-top: 0;
+color: #2a3d66;
+font-size: 22px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: #2a3d66;
+  color: white;
+  padding: 40px 20px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: gold;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin: 4px 0;
+}
+
+.footer-section a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+.footer-section a:hover {
+  color: gold;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+
+
+
+/* ========================= */
+/* Project Folder Structure */
+/* ========================= 
+
+
+Your project files should be arranged like this:
+
+/*
+project-folder/
+│── home.html
+│── about.html
+│── services.html
+│── sermons.html
+│── contact.html
+│── styles.css
+│
+└── /assets
+└── images (optional)
+/* SLIDER */
+.slider { position: relative; height: 60vh; overflow: hidden; }
+.slides img { width: 100%; height: 60vh; object-fit: cover; }
+.fade { animation: fadeEffect 2s; }
+@keyframes fadeEffect { from{opacity:0.4;} to{opacity:1;} }
+
+
+/* Fade-in animation */
+.fade-in { opacity:0; transform: translateY(20px); animation: fadeInUp 1s forwards; }
+@keyframes fadeInUp { to{opacity:1; transform:translateY(0);} }
+
+
+/* Buttons */
+.btn { padding:12px 24px; background:gold; color:#222; border-radius:30px; text-decoration:none; font-weight:bold; transition:0.3s; }
+.btn:hover { background:#d4af37; }
+
+
+/* Gallery */
+.gallery-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+.gallery-grid img { width:100%; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.2); }
+
