@@ -100,12 +100,21 @@ nav a:hover {
   width: 100%;
   overflow: hidden;
   display: block;
+  line-height: 0;
 }
 
 .hero-img {
   width: 100%;
   height: auto;
   display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Small hero for other pages */
