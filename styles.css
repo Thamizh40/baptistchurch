@@ -106,6 +106,9 @@ nav a:hover {
  width: 100%;
  height: auto;
  }
+hero-image {    width: 100%; /* Full width */    
+            height: auto; /* Maintain aspect ratio */    
+            object-fit: cover; /* Cover the area without distortion */}
  @media (max-width: 768px) {    .hero-image {        
    height: 50vh; /* Set a height for mobile devices (50% of viewport height) */        
    object-fit: cover; /* Ensure the image covers the area */    }
@@ -263,6 +266,7 @@ footer {
 .btn:hover {
   background: #d4af37;
 }
+
 
 
 
