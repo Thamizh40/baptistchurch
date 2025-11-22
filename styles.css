@@ -1,4 +1,4 @@
-* ========================= */
+/* ========================= */
 /* GLOBAL STYLES */
 /* ========================= */
 body {
@@ -92,19 +92,155 @@ nav a:hover {
 }
 
 /* ========================= */
-/* HERO SECTION */
+/* WELCOME HERO SECTION */
 /* ========================= */
-
-.hero {
-  width: 100%;
-  display: block;
+.welcome-hero {
+  background: linear-gradient(135deg, #2a3d66 0%, #1a2644 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
 }
 
-.hero-img {
+.welcome-content h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.welcome-content .tagline {
+  font-size: 1.5rem;
+  color: gold;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.welcome-content .description {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .welcome-hero {
+    padding: 60px 20px;
+  }
+  
+  .welcome-content h2 {
+    font-size: 2rem;
+  }
+  
+  .welcome-content .tagline {
+    font-size: 1.2rem;
+  }
+}
+
+/* ========================= */
+/* CHURCH SHOWCASE */
+/* ========================= */
+.church-showcase {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.showcase-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.church-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.church-card img {
   width: 100%;
   height: auto;
   display: block;
-  aspect-ratio: auto;
+}
+
+.card-content {
+  padding: 30px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 2rem;
+  color: #2a3d66;
+  margin-bottom: 15px;
+}
+
+.card-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ========================= */
+/* INFO CARDS */
+/* ========================= */
+.info-cards {
+  display: flex;
+  gap: 30px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-cards .card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.info-cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.info-cards .card h3 {
+  color: #2a3d66;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.info-cards .card p {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.info-cards .card a {
+  color: #2a3d66;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.info-cards .card a:hover {
+  color: #1a2644;
+}
+
+@media (max-width: 768px) {
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info-cards .card {
+    width: 100%;
+    max-width: 400px;
+  }
 }
 
 /* Small hero for other pages */
