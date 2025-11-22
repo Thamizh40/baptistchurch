@@ -98,12 +98,17 @@ nav a:hover {
 /* ========================= */
 
 
-.hero {    background-image: url('ch1.jpg');    background-size: cover; /* Cover ensures the image fills the area */    background-position: center; /* Center the image */    height: 100vh; /* Full viewport height */}
+.hero {    background-image: url('ch1.jpg');  
+       background-size: cover; /* Cover ensures the image fills the area */    
+       background-position: center; /* Center the image */    
+       height: 70vh; /* Full viewport height */}
  .hero-img {
  width: 100%;
  height: auto;
  }
- @media (max-width: 768px) {    .hero-image {        height: 50vh; /* Set a height for mobile devices (50% of viewport height) */        object-fit: cover; /* Ensure the image covers the area */    }
+ @media (max-width: 768px) {    .hero-image {        
+   height: 50vh; /* Set a height for mobile devices (50% of viewport height) */        
+   object-fit: cover; /* Ensure the image covers the area */    }
 
 
 /* Small hero for other pages */
@@ -258,6 +263,7 @@ footer {
 .btn:hover {
   background: #d4af37;
 }
+
 
 
 
