@@ -99,21 +99,13 @@ nav a:hover {
 .hero {
   width: 100%;
   overflow: hidden;
+  display: block;
 }
 
 .hero-img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: contain;
-}
-
-/* Mobile responsive - maintain aspect ratio */
-@media (max-width: 768px) {
-  .hero-img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 /* Small hero for other pages */
