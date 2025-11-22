@@ -98,35 +98,24 @@ nav a:hover {
 
 .hero {
   width: 100%;
-  overflow: hidden;
-  display: block;
-  line-height: 0;
-}
-
-.hero-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  max-width: 100%;
+  height: 60vh;
+  background-image: url('ch1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
-  .hero-img {
-    width: 100%;
-    height: auto;
+  .hero {
+    height: 40vh;
   }
 }
 
 /* Small hero for other pages */
 .small-hero {
   height: 40vh;
-  overflow: hidden;
-}
-
-.small-hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 768px) {
